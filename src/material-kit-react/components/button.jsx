@@ -10,7 +10,7 @@ import Button from "@material-ui/core/Button";
 
 // core components
 
-import buttonStyle from "./styles/buttonStyles.jsx";
+import buttonStyle from "../styles/buttonStyles.jsx";
 
 function RegularButton({ ...props }) {
   const {

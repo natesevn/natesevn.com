@@ -16,7 +16,7 @@ import { Apps, CloudDownload } from "@material-ui/icons";
 import CustomDropdown from "./customDropdown.jsx";
 import Button from "./button.jsx";
 
-import headerLinksStyle from "./styles/headerLinksStyle.jsx";
+import headerLinksStyle from "../styles/headerLinksStyles.jsx";
 
 function HeaderLinks({ ...props }) {
   const { classes } = props;

@@ -9,6 +9,7 @@ import {
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Header from './material-kit-react/components/header.jsx';
+import HeaderLinks from './material-kit-react/components/headerLinks.jsx';
 import Parallax from './material-kit-react/components/parallax.jsx';
 import Typography from '@material-ui/core/Typography';
 
@@ -48,7 +49,7 @@ class Main extends Component {
 						<Header
 							color="transparent"
 							brand="Material Kit React"
-							//rightLinks={}
+							rightLinks={<HeaderLinks />}
 							fixed
 							changeColorOnScroll={{
 								height: 200,

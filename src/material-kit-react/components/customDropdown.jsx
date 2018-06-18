@@ -17,7 +17,7 @@ import Divider from "@material-ui/core/Divider";
 // core components
 import Button from "./button.jsx";
 
-import customDropdownStyle from "./styles/customDropdownStyle.jsx";
+import customDropdownStyle from "../styles/customDropdownStyle.jsx";
 
 class CustomDropdown extends React.Component {
   constructor(props) {
