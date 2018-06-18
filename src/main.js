@@ -8,8 +8,8 @@ import {
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Header from './material-kit-react/header.jsx';
-import Parallax from './material-kit-react/parallax.jsx';
+import Header from './material-kit-react/components/header.jsx';
+import Parallax from './material-kit-react/components/parallax.jsx';
 import Typography from '@material-ui/core/Typography';
 
 import Home from "./home";
