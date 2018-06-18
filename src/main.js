@@ -83,7 +83,7 @@ class Main extends Component {
 				<div>
 					Loading...
 				</div>
-				);
+			);
 		}
 	}
 }
