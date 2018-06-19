@@ -1,58 +1,20 @@
 import Butter from 'buttercms';
 import React, { Component } from "react";
-import {
-	Route,
-	NavLink,
-	HashRouter
-} from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Scrollchor from "react-scrollchor";
-import { container, title } from "./material-kit-react/styles/material-kit-react.jsx";
 
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Header from './material-kit-react/components/header.jsx';
-import HeaderLinks from './material-kit-react/components/headerLinks.jsx';
-import Parallax from './material-kit-react/components/parallax.jsx';
+import basicPageStyle from '../material-kit-react/styles/basicPageStyle.jsx';
+
+import Header from '../material-kit-react/components/header.jsx';
+import HeaderLinks from '../material-kit-react/components/headerLinks.jsx';
+import Parallax from '../material-kit-react/components/parallax.jsx';
 import Typography from '@material-ui/core/Typography';
 
-import Home from "./home";
-import Stuff from "./stuff";
-import Contact from "./contact";
+import Home from "../components/home";
+import Stuff from "../components/stuff";
+import Contact from "../components/contact";
 
 const butter = Butter('302d2120f0ad6f28bdf6ec37ba9e4a4a577db0f6');
-
-const mainStyle = {
-  container: {
-    zIndex: "12",
-    color: "#FFFFFF",
-    ...container
-  },
-  title: {
-    ...title,
-    display: "inline-block",
-    position: "relative",
-    marginTop: "30px",
-    minHeight: "32px",
-    color: "#FFFFFF",
-    textDecoration: "none"
-  },
-  subtitle: {
-    fontSize: "1.313rem",
-    maxWidth: "500px",
-    margin: "10px auto 0"
-  },
-  main: {
-    background: "#FFFFFF",
-    position: "relative",
-    zIndex: "3"
-  },
-  mainRaised: {
-    margin: "-60px 30px 0px",
-    borderRadius: "6px",
-    boxShadow:
-      "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
-  }
-};
 
 class Main extends Component {
 
@@ -74,7 +36,7 @@ class Main extends Component {
 	}
 
 	render() {
-		 const { classes, ...rest } = this.props;
+		const { classes, ...rest } = this.props;
 		if (this.state.content) {
 			const homepage = this.state.content;
 
@@ -93,22 +55,24 @@ class Main extends Component {
 							{...rest}
 						/>
 
-						<Parallax small filter image={require("./assets/img/profile-bg.jpg")} />
+						<Parallax small filter image={require("../assets/img/profile-bg.jpg")} />
 						
-						<Typography variant="display1" id="top" gutterBottom>
-							Simple SPA
-						</Typography>
+						<div style={Object.assign(basicPageStyle.main, basicPageStyle.mainRaised)}>	
+							<Typography variant="display1" id="top" gutterBottom>
+								Simple SPA
+							</Typography>
 
-			          	<h1 id="one">Section One</h1>
-				        <Lorem />
+				          	<h1 id="one">Section One</h1>
+					        <Lorem />
 
-				        <h1 id="two">Section Two</h1>
-				        <p><Scrollchor to="#top">Top</Scrollchor></p>
-				        <Lorem />
+					        <h1 id="two">Section Two</h1>
+					        <p><Scrollchor to="#top">Top</Scrollchor></p>
+					        <Lorem />
 
-				        <h1 id="three">Section Three</h1>
-				        <p><Scrollchor to="">Home</Scrollchor></p>
-				        <Lorem />	
+					        <h1 id="three">Section Three</h1>
+					        <p><Scrollchor to="">Home</Scrollchor></p>
+					        <Lorem />	
+					    </div>
 					</div>
 				</HashRouter>
 				);
@@ -125,7 +89,7 @@ class Main extends Component {
 export default Main;
 
 const Lorem = () =>
-    <div style={mainStyle.mainRaised}>
+    <div>
         <p>Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam incididunt duis in sint irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit officia tempor esse quis.</p>
         <p>Sunt ad dolore quis aute consequat. Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.</p>
         <p>Est velit labore esse esse cupidatat. Velit id elit consequat minim. Mollit enim excepteur ea laboris adipisicing aliqua proident occaecat do do adipisicing adipisicing ut fugiat. Consequat pariatur ullamco aute sunt esse. Irure excepteur eu non eiusmod. Commodo commodo et ad ipsum elit esse pariatur sit adipisicing sunt excepteur enim.</p>

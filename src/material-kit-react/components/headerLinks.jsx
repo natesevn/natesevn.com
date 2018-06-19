@@ -19,42 +19,21 @@ import Button from "./button.jsx";
 
 import headerLinksStyle from "../styles/headerLinksStyles.jsx";
 
+const linkStyle = {
+	textDecoration: 'none',
+	color:'inherit'
+} 
+
 function HeaderLinks({ ...props }) {
 	const { classes } = props;
 	return (
 		<List className={classes.list}>
 			<ListItem className={classes.listItem}>
-
-				<CustomDropdown
-					noLiPadding
-					buttonText="Components"
-					buttonProps={{
-						className: classes.navLink,
-						color: "transparent"
-					}}
-					buttonIcon={Apps}
-					dropdownList={[
-						<Link to="/" className={classes.dropdownLink}>
-							All components
-						</Link>,
-
-						<a
-							href="https://creativetimofficial.github.io/material-kit-react/#/documentation"
-							target="_blank"
-							className={classes.dropdownLink}
-						>
-							Documentation
-						</a>
-					]}
-				/>
-			</ListItem>
-
-			<ListItem className={classes.listItem}>
 				<Button
 				color="transparent"
 				className={classes.navLink}
 				>
-					<Scrollchor  animate={{offset: -100}} to="#one">Home</Scrollchor>
+					<Scrollchor style={linkStyle} animate={{offset: -100}} to="#one">About</Scrollchor>
 				</Button>
 			</ListItem>
 
@@ -63,7 +42,7 @@ function HeaderLinks({ ...props }) {
 				color="transparent"
 				className={classes.navLink}
 				>
-					<Scrollchor  animate={{offset: -100}} to="#two">Stuff</Scrollchor>
+					<Scrollchor style={linkStyle} animate={{offset: -100}} to="#two">Home</Scrollchor>
 				</Button>
 			</ListItem>
 
@@ -72,7 +51,16 @@ function HeaderLinks({ ...props }) {
 				color="transparent"
 				className={classes.navLink}
 				>
-					<Scrollchor  animate={{offset: -100}} to="#three">Contact</Scrollchor>
+					<Scrollchor style={linkStyle} animate={{offset: -100}} to="#three">Stuff</Scrollchor>
+				</Button>
+			</ListItem>
+
+			<ListItem className={classes.listItem}>
+				<Button
+				color="transparent"
+				className={classes.navLink}
+				>
+					<Scrollchor style={linkStyle} animate={{offset: -100}} to="#four">Contact</Scrollchor>
 				</Button>
 			</ListItem>
 		</List>

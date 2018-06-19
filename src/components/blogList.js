@@ -4,7 +4,7 @@ import Butter from 'buttercms'
 
 const butter = Butter('302d2120f0ad6f28bdf6ec37ba9e4a4a577db0f6');
 
-class BlogHome extends Component {
+class BlogList extends Component {
 
 	constructor(props) {
 		super(props);
@@ -71,4 +71,4 @@ class BlogHome extends Component {
 	}
 }
 
-export default BlogHome;
+export default BlogList;
