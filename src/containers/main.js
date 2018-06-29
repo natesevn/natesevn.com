@@ -57,7 +57,7 @@ class Main extends Component {
 
 						<Parallax small filter image={require("../assets/img/profile-bg.jpg")} />
 						
-						<div style={Object.assign(basicPageStyle.main, basicPageStyle.mainRaised)}>	
+						<div style={Object.assign(basicPageStyle.card)}>	
 							<Typography variant="display1" id="top" gutterBottom>
 								Simple SPA
 							</Typography>

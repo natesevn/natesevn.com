@@ -20,12 +20,10 @@ const basicPageStyle = {
     maxWidth: "500px",
     margin: "10px auto 0"
   },
-  main: {
+  card: {
     background: "#FFFFFF",
     position: "relative",
-    zIndex: "3"
-  },
-  mainRaised: {
+    zIndex: "3",
     margin: "-60px 30px 0px",
     borderRadius: "6px",
     boxShadow:
