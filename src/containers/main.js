@@ -62,16 +62,21 @@ class Main extends Component {
 								Simple SPA
 							</Typography>
 
-				          	<h1 id="one">Section One</h1>
+				          	<h1 id="one">About</h1>
 					        <Lorem />
 
-					        <h1 id="two">My Blog</h1>
-					        <p><Scrollchor to="#top">Top</Scrollchor></p>
+					        {/*<h1 id="two">My Blog</h1>
 					        <Lorem />
-					        <a href="/blogs">Read More</a>
+					        <a href="/blogs">Read More</a>*/}
 
-					        <h1 id="three">Section Three</h1>
-					        <p><Scrollchor to="">Home</Scrollchor></p>
+					        <h1 id="two">Featured Projects</h1>
+					        <Lorem />
+					        <a href="https://www.github.com/natesevn">See More</a>
+					        
+					        <h1 id="three">Timeline</h1>
+					        <Lorem />	
+
+					        <h1 id="four">Contact Me</h1>
 					        <Lorem />	
 					    </div>
 					</div>

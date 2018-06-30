@@ -42,7 +42,7 @@ function HeaderLinks({ ...props }) {
 				color="transparent"
 				className={classes.navLink}
 				>
-					<Scrollchor style={linkStyle} animate={{offset: -100}} to="#two">Home</Scrollchor>
+					<Scrollchor style={linkStyle} animate={{offset: -100}} to="#two">Featured Projects</Scrollchor>
 				</Button>
 			</ListItem>
 
@@ -51,7 +51,7 @@ function HeaderLinks({ ...props }) {
 				color="transparent"
 				className={classes.navLink}
 				>
-					<Scrollchor style={linkStyle} animate={{offset: -100}} to="#three">Stuff</Scrollchor>
+					<Scrollchor style={linkStyle} animate={{offset: -100}} to="#three">Timeline</Scrollchor>
 				</Button>
 			</ListItem>
 
@@ -60,7 +60,7 @@ function HeaderLinks({ ...props }) {
 				color="transparent"
 				className={classes.navLink}
 				>
-					<Scrollchor style={linkStyle} animate={{offset: -100}} to="#four">Contact</Scrollchor>
+					<Scrollchor style={linkStyle} animate={{offset: -100}} to="#four">Contact Me</Scrollchor>
 				</Button>
 			</ListItem>
 		</List>
