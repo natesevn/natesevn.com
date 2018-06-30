@@ -22,7 +22,7 @@ class Blog extends Component {
 						{...rest}
 					/>
 				<Parallax small filter image={require("../assets/img/profile-bg.jpg")} />
-				<div style={Object.assign(basicPageStyle.main, basicPageStyle.mainRaised)}>	
+				<div style={Object.assign(basicPageStyle.card)}>	
 					//{this.props.children}
 				</div>
 			</div>
