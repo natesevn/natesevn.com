@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import basicPageStyle from '../material-kit-react/styles/basicPageStyle.jsx';
 
 import Header from '../material-kit-react/components/header.jsx';
+import HeaderLinks from '../material-kit-react/components/headerLinks.jsx';
 import Parallax from '../material-kit-react/components/parallax.jsx';
 
 class Blog extends Component {
@@ -14,6 +15,7 @@ class Blog extends Component {
 				<Header
 						color="transparent"
 						brand="My Blog"
+						rightLinks={<HeaderLinks />}
 						fixed
 						changeColorOnScroll={{
 							height: 200,
@@ -23,7 +25,7 @@ class Blog extends Component {
 					/>
 				<Parallax small filter image={require("../assets/img/profile-bg.jpg")} />
 				<div style={Object.assign(basicPageStyle.card)}>	
-					//{this.props.children}
+					{this.props.children}
 				</div>
 			</div>
 		);

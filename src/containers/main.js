@@ -65,9 +65,10 @@ class Main extends Component {
 				          	<h1 id="one">Section One</h1>
 					        <Lorem />
 
-					        <h1 id="two">Section Two</h1>
+					        <h1 id="two">My Blog</h1>
 					        <p><Scrollchor to="#top">Top</Scrollchor></p>
 					        <Lorem />
+					        <a href="/blogs">Read More</a>
 
 					        <h1 id="three">Section Three</h1>
 					        <p><Scrollchor to="">Home</Scrollchor></p>
